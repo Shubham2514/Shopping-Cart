@@ -14,7 +14,6 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-/* border: 2px solid orange; */
 }
 
 
@@ -37,14 +36,12 @@ body::-webkit-scrollbar{
 }
 
 .item-container{
-  /* border: 2px solid blue; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   max-height: 1000px ;
   overflow: auto;
-  /* margin: 100px 100px 100px 100px; */
   width: 50%;
 }
 
@@ -97,9 +94,6 @@ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
   margin: 5%;
 }
 
-/* table,tr,td{
-  border: 2px solid  grey;
-} */
  
 td{
   padding : 10px;
