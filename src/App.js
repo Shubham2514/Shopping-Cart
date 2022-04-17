@@ -1,11 +1,9 @@
-// import logo from './logo.svg';
+
 import axios from 'axios';
 import { useEffect, useState } from 'react';
-// import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './Footer';
 import Header from './Header';
-// import Description from './Description';
 
 function App() {
   const [arr,setArr] = useState([]);
@@ -26,7 +24,6 @@ async function addProfessor() {
         headers: { Authorization: "Bearer " + "ULxG9gG98KDGPql/BFI/woCN9T8=" },       
       };
       const response = await axios(options);
-      // console.log("check response", response);
       setArr(response.data.data.items);
     } catch (error) {
       console.log("error im",error);
@@ -41,7 +38,6 @@ async function addProfessor() {
         return data;
       }
    })
-  //  console.log(a);
     setCopyArr(a);
  }
   
@@ -116,7 +112,6 @@ function totalAmountCalculator(){
   }
   cartItemNumberHandler();
   totalAmountCalculator();
-  // console.log(cart.length +" "+cartLength);
  }
 
  function addHandler(id){
@@ -126,7 +121,6 @@ function totalAmountCalculator(){
      }
      return data;
    })
-  //  console.log(x);
   setCart(x);
   cartItemNumberHandler();
   totalAmountCalculator();
@@ -236,7 +230,6 @@ function totalAmountCalculator(){
          )
      }
    })}
-     <h1>hahah</h1>
    </div>
    :null}
    <Footer/>
